@@ -1,2 +1,2 @@
 # OV5640_Dual
-relevant program
+武汉理工大学集创赛校赛初赛
