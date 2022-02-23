@@ -1,0 +1,567 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 24 00:01:20 2022
+# Process ID: 21232
+# Current directory: F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1
+# Command line: vivado.exe -log ov5640x2_ddr3_tft.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov5640x2_ddr3_tft.tcl -notrace
+# Log file: F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.vdi
+# Journal file: F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ov5640x2_ddr3_tft.tcl -notrace
+Command: link_design -top ov5640x2_ddr3_tft -part xc7a35tfgg484-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll.dcp' for cell 'pll'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/rd_ddr3_fifo/rd_ddr3_fifo.dcp' for cell 'ddr3_ctrl_2port/rd_ddr3_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'ddr3_ctrl_2port/u_mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/wr_ddr3_fifo/wr_ddr3_fifo.dcp' for cell 'ddr3_ctrl_2port/wr_ddr3_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/eth_tx_fifo/eth_tx_fifo.dcp' for cell 'eth_tx_ctrl_inst/eth_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer.dcp' for cell 'image_stitche_x/correct_set_pro.image1_buffer'
+INFO: [Netlist 29-17] Analyzing 481 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll/inst'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll/inst'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll/inst'
+create_clock: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 757.703 ; gain = 4.914
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:02:20 . Memory (MB): peak = 1328.863 ; gain = 571.160
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll/inst'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'ddr3_ctrl_2port/u_mig_7series_0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'ddr3_ctrl_2port/u_mig_7series_0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/rd_ddr3_fifo/rd_ddr3_fifo.xdc] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/rd_ddr3_fifo/rd_ddr3_fifo.xdc] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/wr_ddr3_fifo/wr_ddr3_fifo.xdc] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/wr_ddr3_fifo/wr_ddr3_fifo.xdc] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer.xdc] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer.xdc] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer.xdc] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer.xdc] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/eth_tx_fifo/eth_tx_fifo.xdc] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/eth_tx_fifo/eth_tx_fifo.xdc] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0'
+Parsing XDC File [F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/constrs_1/new/io.xdc]
+Finished Parsing XDC File [F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/constrs_1/new/io.xdc]
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/rd_ddr3_fifo/rd_ddr3_fifo_clocks.xdc] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/rd_ddr3_fifo/rd_ddr3_fifo_clocks.xdc] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/wr_ddr3_fifo/wr_ddr3_fifo_clocks.xdc] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/wr_ddr3_fifo/wr_ddr3_fifo_clocks.xdc] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer_clocks.xdc] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer_clocks.xdc] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer_clocks.xdc] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/image_buffer/image_buffer_clocks.xdc] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0'
+Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/eth_tx_fifo/eth_tx_fifo_clocks.xdc] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0'
+Finished Parsing XDC File [f:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/ip/eth_tx_fifo/eth_tx_fifo_clocks.xdc] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst' of design 'design_1' [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+create_waiver: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1374.852 ; gain = 0.000
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst' of design 'design_1' [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr' of design 'design_1' [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd' of design 'design_1' [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_tx_ctrl_inst/eth_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image1_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'image_stitche_x/correct_set_pro.image2_buffer/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/rd_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [F:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1374.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 130 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 109 instances
+
+19 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:35 ; elapsed = 00:04:45 . Memory (MB): peak = 1374.852 ; gain = 972.824
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1374.852 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1b2b835fb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1374.852 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 5 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 776e0623
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-389] Phase Retarget created 203 cells and removed 259 cells
+INFO: [Opt 31-1021] In phase Retarget, 36 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Phase 2 Constant propagation | Checksum: 12de33133
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-389] Phase Constant propagation created 33 cells and removed 96 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c8121426
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 267 cells
+INFO: [Opt 31-1021] In phase Sweep, 88 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG pll/inst/clk_out1_pll_BUFG_inst to drive 0 load(s) on clock net pll/inst/clk_out1_pll_BUFG
+INFO: [Opt 31-194] Inserted BUFG pll/inst/clk_out2_pll_BUFG_inst to drive 0 load(s) on clock net pll/inst/clk_out2_pll_BUFG
+INFO: [Opt 31-194] Inserted BUFG pll/inst/clk_out3_pll_BUFG_inst to drive 0 load(s) on clock net pll/inst/clk_out3_pll_BUFG
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: fed25f94
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 16e87e95e
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1a2471468
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1397.230 ; gain = 0.586
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             203  |             259  |                                             36  |
+|  Constant propagation         |              33  |              96  |                                             16  |
+|  Sweep                        |               2  |             267  |                                             88  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             16  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1397.230 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1e2701d9b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1397.230 ; gain = 0.586
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.913 | TNS=-349.349 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 10 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 8 Total Ports: 20
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 19030132f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19030132f
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1756.785 ; gain = 359.555
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-194] Inserted BUFG pll/inst/clk_out4_pll_BUFG_inst to drive 0 load(s) on clock net pll/inst/clk_out4_pll_BUFG
+INFO: [Opt 31-194] Inserted BUFG pll/inst/clk_out6_pll_BUFG_inst to drive 0 load(s) on clock net pll/inst/clk_out6_pll_BUFG
+INFO: [Opt 31-194] Inserted BUFG ddr3_ctrl_2port/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out_BUFG_inst to drive 0 load(s) on clock net ddr3_ctrl_2port/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out_BUFG
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Ending Logic Optimization Task | Checksum: 229064553
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 229064553
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1756.785 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 229064553
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1756.785 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:38 ; elapsed = 00:02:27 . Memory (MB): peak = 1756.785 ; gain = 381.934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1756.785 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1756.785 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.785 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file ov5640x2_ddr3_tft_drc_opted.rpt -pb ov5640x2_ddr3_tft_drc_opted.pb -rpx ov5640x2_ddr3_tft_drc_opted.rpx
+Command: report_drc -file ov5640x2_ddr3_tft_drc_opted.rpt -pb ov5640x2_ddr3_tft_drc_opted.pb -rpx ov5640x2_ddr3_tft_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/ENARDEN (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram_ENARDEN_cooolgate_en_sig_9) which is driven by a register (ddr3_ctrl_2port/fifo2mig_axi/m_axi_wvalid_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/ENBWREN (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[0] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[1] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[2] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[3] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[4] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[5] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[6] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[7] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/ENARDEN (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram_ENARDEN_cooolgate_en_sig_10) which is driven by a register (ddr3_ctrl_2port/fifo2mig_axi/m_axi_wvalid_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/ENBWREN (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[0] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[1] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[2] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[3] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[4] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[5] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[6] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram has an input control pin ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC_sp.ram/WEBWE[7] (net: ddr3_ctrl_2port/wr_ddr3_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/E[0]) which is driven by a register (image_stitche_x/correct_set_pro.data_valid_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[10] (net: camera1_init/camera_init_table/Q[6]) which is driven by a register (camera1_init/cnt_reg_rep[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[11] (net: camera1_init/camera_init_table/Q[7]) which is driven by a register (camera1_init/cnt_reg_rep[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[4] (net: camera1_init/camera_init_table/Q[0]) which is driven by a register (camera1_init/cnt_reg_rep[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[5] (net: camera1_init/camera_init_table/Q[1]) which is driven by a register (camera1_init/cnt_reg_rep[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[6] (net: camera1_init/camera_init_table/Q[2]) which is driven by a register (camera1_init/cnt_reg_rep[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[7] (net: camera1_init/camera_init_table/Q[3]) which is driven by a register (camera1_init/cnt_reg_rep[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[8] (net: camera1_init/camera_init_table/Q[4]) which is driven by a register (camera1_init/cnt_reg_rep[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRARDADDR[9] (net: camera1_init/camera_init_table/Q[5]) which is driven by a register (camera1_init/cnt_reg_rep[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[10] (net: camera1_init/camera_init_table/Q[6]) which is driven by a register (camera1_init/cnt_reg_rep[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[11] (net: camera1_init/camera_init_table/Q[7]) which is driven by a register (camera1_init/cnt_reg_rep[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[4] (net: camera1_init/camera_init_table/Q[0]) which is driven by a register (camera1_init/cnt_reg_rep[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[5] (net: camera1_init/camera_init_table/Q[1]) which is driven by a register (camera1_init/cnt_reg_rep[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[6] (net: camera1_init/camera_init_table/Q[2]) which is driven by a register (camera1_init/cnt_reg_rep[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[7] (net: camera1_init/camera_init_table/Q[3]) which is driven by a register (camera1_init/cnt_reg_rep[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[8] (net: camera1_init/camera_init_table/Q[4]) which is driven by a register (camera1_init/cnt_reg_rep[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera1_init/camera_init_table/q_reg has an input control pin camera1_init/camera_init_table/q_reg/ADDRBWRADDR[9] (net: camera1_init/camera_init_table/Q[5]) which is driven by a register (camera1_init/cnt_reg_rep[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera2_init/camera_init_table/q_reg has an input control pin camera2_init/camera_init_table/q_reg/ADDRARDADDR[10] (net: camera2_init/camera_init_table/Q[6]) which is driven by a register (camera2_init/cnt_reg_rep[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera2_init/camera_init_table/q_reg has an input control pin camera2_init/camera_init_table/q_reg/ADDRARDADDR[11] (net: camera2_init/camera_init_table/Q[7]) which is driven by a register (camera2_init/cnt_reg_rep[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera2_init/camera_init_table/q_reg has an input control pin camera2_init/camera_init_table/q_reg/ADDRARDADDR[8] (net: camera2_init/camera_init_table/Q[4]) which is driven by a register (camera2_init/cnt_reg_rep[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 camera2_init/camera_init_table/q_reg has an input control pin camera2_init/camera_init_table/q_reg/ADDRARDADDR[9] (net: camera2_init/camera_init_table/Q[5]) which is driven by a register (camera2_init/cnt_reg_rep[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1ade9ee74
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.395 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1756.785 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (11) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 11 sites.
+	Term: gmii_txd[0]
+	Term: gmii_txd[1]
+	Term: gmii_txd[2]
+	Term: gmii_txd[3]
+	Term: gmii_txd[4]
+	Term: gmii_txd[5]
+	Term: gmii_txd[6]
+	Term: gmii_txd[7]
+	Term: eth_reset_n
+	Term: gmii_txen
+	Term: gtxclk
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (11) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 11 sites.
+	Term: gmii_txd[0]
+	Term: gmii_txd[1]
+	Term: gmii_txd[2]
+	Term: gmii_txd[3]
+	Term: gmii_txd[4]
+	Term: gmii_txd[5]
+	Term: gmii_txd[6]
+	Term: gmii_txd[7]
+	Term: eth_reset_n
+	Term: gmii_txen
+	Term: gtxclk
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |     9 | LVCMOS33(9)                                                            |                                          |        |  +3.30 |    YES |     |
+| 15 |    50 |     4 | LVCMOS33(4)                                                            |                                          |        |  +3.30 |    YES |     |
+| 16 |    50 |    33 | LVCMOS33(33)                                                           |                                          |        |  +3.30 |    YES |     |
+| 34 |    50 |    48 | LVCMOS15(1)  DIFF_SSTL15(6)  SSTL15(41)                                |                                          |  +0.75 |  +1.50 |    YES |     |
+| 35 |    50 |    13 | LVCMOS33(13)                                                           |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   250 |   107 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | TFT_clk              | LVCMOS33        | IOB_X0Y1             | R17                  |                      |
+|        | TFT_de               | LVCMOS33        | IOB_X0Y8             | N17                  |                      |
+|        | TFT_hs               | LVCMOS33        | IOB_X0Y9             | T18                  |                      |
+|        | TFT_pwm              | LVCMOS33        | IOB_X0Y10            | R18                  |                      |
+|        | TFT_rgb[2]           | LVCMOS33        | IOB_X0Y5             | R16                  |                      |
+|        | TFT_rgb[3]           | LVCMOS33        | IOB_X0Y11            | R14                  | *                    |
+|        | TFT_rgb[4]           | LVCMOS33        | IOB_X0Y7             | P17                  |                      |
+|        | TFT_vs               | LVCMOS33        | IOB_X0Y13            | U18                  |                      |
+|        | clk50m               | LVCMOS33        | IOB_X0Y24            | Y18                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 15     | led[0]               | LVCMOS33        | IOB_X0Y69            | M22                  |                      |
+|        | led[1]               | LVCMOS33        | IOB_X0Y70            | N22                  |                      |
+|        | led[2]               | LVCMOS33        | IOB_X0Y79            | L21                  |                      |
+|        | led[3]               | LVCMOS33        | IOB_X0Y82            | K21                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 16     | Ctrl_on_1            | LVCMOS33        | IOB_X0Y101           | G22                  |                      |
+|        | Ctrl_on_2            | LVCMOS33        | IOB_X0Y105           | D22                  |                      |
+|        | camera1_data[0]      | LVCMOS33        | IOB_X0Y132           | A15                  |                      |
+|        | camera1_data[1]      | LVCMOS33        | IOB_X0Y131           | A16                  |                      |
+|        | camera1_data[2]      | LVCMOS33        | IOB_X0Y116           | A18                  |                      |
+|        | camera1_data[3]      | LVCMOS33        | IOB_X0Y115           | A19                  |                      |
+|        | camera1_data[4]      | LVCMOS33        | IOB_X0Y148           | F13                  |                      |
+|        | camera1_data[5]      | LVCMOS33        | IOB_X0Y147           | F14                  |                      |
+|        | camera1_data[6]      | LVCMOS33        | IOB_X0Y142           | E13                  |                      |
+|        | camera1_data[7]      | LVCMOS33        | IOB_X0Y141           | E14                  |                      |
+|        | camera1_href         | LVCMOS33        | IOB_X0Y138           | D14                  |                      |
+|        | camera1_pclk         | LVCMOS33        | IOB_X0Y133           | B13                  |                      |
+|        | camera1_rst_n        | LVCMOS33        | IOB_X0Y129           | A14                  |                      |
+|        | camera1_sclk         | LVCMOS33        | IOB_X0Y143           | C15                  |                      |
+|        | camera1_sdat         | LVCMOS33        | IOB_X0Y144           | C14                  |                      |
+|        | camera1_vsync        | LVCMOS33        | IOB_X0Y137           | D15                  | *                    |
+|        | camera1_xclk         | LVCMOS33        | IOB_X0Y134           | C13                  |                      |
+|        | camera2_data[0]      | LVCMOS33        | IOB_X0Y126           | D17                  |                      |
+|        | camera2_data[1]      | LVCMOS33        | IOB_X0Y125           | C17                  |                      |
+|        | camera2_data[2]      | LVCMOS33        | IOB_X0Y140           | E16                  |                      |
+|        | camera2_data[3]      | LVCMOS33        | IOB_X0Y139           | D16                  |                      |
+|        | camera2_data[4]      | LVCMOS33        | IOB_X0Y128           | B17                  |                      |
+|        | camera2_data[5]      | LVCMOS33        | IOB_X0Y127           | B18                  |                      |
+|        | camera2_data[6]      | LVCMOS33        | IOB_X0Y124           | C18                  |                      |
+|        | camera2_data[7]      | LVCMOS33        | IOB_X0Y123           | C19                  |                      |
+|        | camera2_href         | LVCMOS33        | IOB_X0Y112           | D20                  |                      |
+|        | camera2_pclk         | LVCMOS33        | IOB_X0Y145           | E17                  |                      |
+|        | camera2_rst_n        | LVCMOS33        | IOB_X0Y135           | B16                  |                      |
+|        | camera2_sclk         | LVCMOS33        | IOB_X0Y121           | D19                  |                      |
+|        | camera2_sdat         | LVCMOS33        | IOB_X0Y122           | E19                  |                      |
+|        | camera2_vsync        | LVCMOS33        | IOB_X0Y111           | C20                  | *                    |
+|        | camera2_xclk         | LVCMOS33        | IOB_X0Y146           | F16                  |                      |
+|        | reset_n              | LVCMOS33        | IOB_X0Y108           | B21                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | ddr3_ck_p[0]         | DIFF_SSTL15     | IOB_X1Y44            | R3                   |                      |
+|        | ddr3_ck_n[0]         | DIFF_SSTL15     | IOB_X1Y43            | R2                   |                      |
+|        | ddr3_dqs_p[0]        | DIFF_SSTL15     | IOB_X1Y8             | V9                   |                      |
+|        | ddr3_dqs_n[0]        | DIFF_SSTL15     | IOB_X1Y7             | V8                   |                      |
+|        | ddr3_dqs_p[1]        | DIFF_SSTL15     | IOB_X1Y32            | Y3                   |                      |
+|        | ddr3_dqs_n[1]        | DIFF_SSTL15     | IOB_X1Y31            | AA3                  |                      |
+|        | ddr3_addr[0]         | SSTL15          | IOB_X1Y45            | V2                   | VRef=+0.75           |
+|        | ddr3_addr[10]        | SSTL15          | IOB_X1Y13            | AA6                  | VRef=+0.75           |
+|        | ddr3_addr[11]        | SSTL15          | IOB_X1Y24            | R4                   | VRef=+0.75           |
+|        | ddr3_addr[12]        | SSTL15          | IOB_X1Y42            | W2                   | VRef=+0.75           |
+|        | ddr3_addr[13]        | SSTL15          | IOB_X1Y15            | T6                   | VRef=+0.75           |
+|        | ddr3_addr[1]         | SSTL15          | IOB_X1Y46            | U2                   | VRef=+0.75           |
+|        | ddr3_addr[2]         | SSTL15          | IOB_X1Y37            | V3                   | VRef=+0.75*          |
+|        | ddr3_addr[3]         | SSTL15          | IOB_X1Y23            | T4                   | VRef=+0.75           |
+|        | ddr3_addr[4]         | SSTL15          | IOB_X1Y47            | U1                   | VRef=+0.75           |
+|        | ddr3_addr[5]         | SSTL15          | IOB_X1Y22            | T5                   | VRef=+0.75           |
+|        | ddr3_addr[6]         | SSTL15          | IOB_X1Y48            | T1                   | VRef=+0.75           |
+|        | ddr3_addr[7]         | SSTL15          | IOB_X1Y16            | R6                   | VRef=+0.75           |
+|        | ddr3_addr[8]         | SSTL15          | IOB_X1Y38            | U3                   | VRef=+0.75           |
+|        | ddr3_addr[9]         | SSTL15          | IOB_X1Y18            | U6                   | VRef=+0.75           |
+|        | ddr3_ba[0]           | SSTL15          | IOB_X1Y21            | U5                   | VRef=+0.75           |
+|        | ddr3_ba[1]           | SSTL15          | IOB_X1Y39            | Y1                   | VRef=+0.75           |
+|        | ddr3_ba[2]           | SSTL15          | IOB_X1Y40            | W1                   | VRef=+0.75           |
+|        | ddr3_cas_n           | SSTL15          | IOB_X1Y20            | W6                   | VRef=+0.75           |
+|        | ddr3_cke[0]          | SSTL15          | IOB_X1Y41            | Y2                   | VRef=+0.75           |
+|        | ddr3_cs_n[0]         | SSTL15          | IOB_X1Y49            | T3                   | VRef=+0.75           |
+|        | ddr3_dm[0]           | SSTL15          | IOB_X1Y2             | W9                   | VRef=+0.75           |
+|        | ddr3_dm[1]           | SSTL15          | IOB_X1Y34            | AB3                  | VRef=+0.75           |
+|        | ddr3_dq[0]           | SSTL15          | IOB_X1Y10            | AB7                  | VRef=+0.75           |
+|        | ddr3_dq[10]          | SSTL15          | IOB_X1Y33            | AB2                  | VRef=+0.75           |
+|        | ddr3_dq[11]          | SSTL15          | IOB_X1Y26            | V4                   | VRef=+0.75           |
+|        | ddr3_dq[12]          | SSTL15          | IOB_X1Y27            | AA4                  | VRef=+0.75           |
+|        | ddr3_dq[13]          | SSTL15          | IOB_X1Y28            | Y4                   | VRef=+0.75           |
+|        | ddr3_dq[14]          | SSTL15          | IOB_X1Y35            | AB1                  | VRef=+0.75           |
+|        | ddr3_dq[15]          | SSTL15          | IOB_X1Y36            | AA1                  | VRef=+0.75           |
+|        | ddr3_dq[1]           | SSTL15          | IOB_X1Y5             | AB8                  | VRef=+0.75           |
+|        | ddr3_dq[2]           | SSTL15          | IOB_X1Y3             | Y7                   | VRef=+0.75           |
+|        | ddr3_dq[3]           | SSTL15          | IOB_X1Y9             | AB6                  | VRef=+0.75           |
+|        | ddr3_dq[4]           | SSTL15          | IOB_X1Y11            | W7                   | VRef=+0.75*          |
+|        | ddr3_dq[5]           | SSTL15          | IOB_X1Y1             | Y9                   | VRef=+0.75           |
+|        | ddr3_dq[6]           | SSTL15          | IOB_X1Y4             | Y8                   | VRef=+0.75           |
+|        | ddr3_dq[7]           | SSTL15          | IOB_X1Y12            | V7                   | VRef=+0.75           |
+|        | ddr3_dq[8]           | SSTL15          | IOB_X1Y29            | AB5                  | VRef=+0.75           |
+|        | ddr3_dq[9]           | SSTL15          | IOB_X1Y30            | AA5                  | VRef=+0.75           |
+|        | ddr3_odt[0]          | SSTL15          | IOB_X1Y17            | V5                   | VRef=+0.75           |
+|        | ddr3_ras_n           | SSTL15          | IOB_X1Y14            | Y6                   | VRef=+0.75           |
+|        | ddr3_reset_n         | LVCMOS15        | IOB_X1Y0             | U7                   |                      |
+|        | ddr3_we_n            | SSTL15          | IOB_X1Y19            | W5                   | VRef=+0.75           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | TFT_rgb[0]           | LVCMOS33        | IOB_X1Y80            | J5                   |                      |
+|        | TFT_rgb[10]          | LVCMOS33        | IOB_X1Y53            | M5                   |                      |
+|        | TFT_rgb[11]          | LVCMOS33        | IOB_X1Y60            | R1                   |                      |
+|        | TFT_rgb[12]          | LVCMOS33        | IOB_X1Y56            | P2                   |                      |
+|        | TFT_rgb[13]          | LVCMOS33        | IOB_X1Y61            | N3                   | *                    |
+|        | TFT_rgb[14]          | LVCMOS33        | IOB_X1Y57            | P4                   |                      |
+|        | TFT_rgb[15]          | LVCMOS33        | IOB_X1Y58            | P5                   |                      |
+|        | TFT_rgb[1]           | LVCMOS33        | IOB_X1Y66            | K6                   |                      |
+|        | TFT_rgb[5]           | LVCMOS33        | IOB_X1Y52            | P6                   |                      |
+|        | TFT_rgb[6]           | LVCMOS33        | IOB_X1Y62            | N4                   |                      |
+|        | TFT_rgb[7]           | LVCMOS33        | IOB_X1Y54            | M6                   |                      |
+|        | TFT_rgb[8]           | LVCMOS33        | IOB_X1Y51            | N5                   |                      |
+|        | TFT_rgb[9]           | LVCMOS33        | IOB_X1Y50            | L6                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a8d32806
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1756.785 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a8d32806
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1756.785 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1299c49f7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1756.785 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 46 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 24 00:09:39 2022...

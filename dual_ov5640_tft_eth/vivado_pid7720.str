@@ -1,0 +1,728 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7720
+License: Customer
+
+Current time: 	Wed Feb 16 00:28:05 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 29 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/vivado/Vivado
+HDI_APPROOT: F:/vivado/Vivado/2018.3
+RDI_DATADIR: F:/vivado/Vivado/2018.3/data
+RDI_BINDIR: F:/vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/vivado.log
+Vivado journal file location: 	F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/vivado.jou
+Engine tmp dir: 	F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/.Xil/Vivado-7720-DESKTOP-0U7LBNI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/vivado/Vivado/2018.3
+XILINX_SDK: F:/vivado/SDK/2018.3
+XILINX_VIVADO: F:/vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/vivado/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 539 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 99 MB (+100911kb) [00:02:02]
+// [Engine Memory]: 534 MB (+408648kb) [00:02:02]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\Xilink_FPGA\Project\ov5640x2_ddr3_tft_test\ov5640x2_ddr3_tft.xpr. Version: Vivado v2018.3 
+// WARNING: HEventQueue.dispatchEvent() is taking  3129 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1369ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1373 ms.
+// Tcl Message: open_project F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 41 MB. Current time: 2/16/22, 12:28:06 AM CST
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 40 MB. Current time: 2/16/22, 12:28:25 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 715 MB (+161063kb) [00:02:59]
+// [Engine Memory]: 755 MB (+4570kb) [00:03:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  22829 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1923 ms.
+// Tcl Message: open_project F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 767 MB. GUI used memory: 52 MB. Current time: 2/16/22, 12:29:12 AM CST
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 417ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2214 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:01:05 . Memory (MB): peak = 788.523 ; gain = 215.422 
+// [Engine Memory]: 1,111 MB (+333842kb) [00:03:18]
+// Project name: ov5640x2_ddr3_tft; location: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test; part: xc7a35tfgg484-2
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 104 MB (+195kb) [00:03:19]
+// [Engine Memory]: 1,173 MB (+6565kb) [00:03:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (ov5640x2_ddr3_tft.v) elapsed time: 1.6s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v)]", 2, true); // B (D, cp) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  4180 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [GUI Memory]: 116 MB (+7652kb) [00:03:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  1252 ms.
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), DVP_Capture_inst1 : DVP_Capture (DVP_Capture.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), DVP_Capture_inst1 : DVP_Capture (DVP_Capture.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("DVP_Capture.v", 377, 151); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1853 ms.
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  4113 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 6 seconds
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1679 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210241029915. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.  
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1216 ms. Increasing delay to 3000 ms.
+// a (cp): Critical Messages: addNotify
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5246 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 65 MB. Current time: 2/16/22, 12:30:22 AM CST
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,120 MB (+932284kb) [00:04:23]
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 17 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7a35t_0) elapsed time: 0.3s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+setFileChooser("F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 16 seconds
+dismissDialog("Program Device"); // bx (cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1264 ms. Increasing delay to 3792 ms.
+// Elapsed time: 439 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+// Elapsed time: 22 seconds
+dismissFileChooser();
+// 'I' command handler elapsed time: 25 seconds
+// [GUI Memory]: 123 MB (+887kb) [00:12:28]
+dismissDialog("Program Device"); // bC (cp)
+// Elapsed time: 145 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  2038 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+// Elapsed time: 383 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 701 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1669 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1288 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SESSION_CLOSE
+// [GUI Memory]: 132 MB (+3396kb) [00:33:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  1872 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2200 ms. Increasing delay to 6600 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4240 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 71 MB. Current time: 2/16/22, 1:00:26 AM CST
+// Elapsed time: 150 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Feb 16 01:02:12 2022] Launched impl_1... Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 97 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ov5640x2_ddr3_tft.v", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1547ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1547 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 732ms to process. Increasing delay to 3000 ms.
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 372 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// PAPropertyPanels.initPanels (camera_init.v) elapsed time: 0.2s
+// Elapsed time: 132 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v), genblk1.genblk1.camera_init_table : ov5640_init_table_rgb (ov5640_init_table_rgb.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v), genblk1.genblk1.camera_init_table : ov5640_init_table_rgb (ov5640_init_table_rgb.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v), genblk1.genblk1.camera_init_table : ov5640_init_table_rgb (ov5640_init_table_rgb.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v), ov5640_init_table_rgb (ov5640_init_table_rgb.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov5640x2_ddr3_tft (ov5640x2_ddr3_tft.v), camera1_init : camera_init (camera_init.v), ov5640_init_table_rgb (ov5640_init_table_rgb.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1394 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1636 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 70 MB. Current time: 2/16/22, 1:30:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 2:00:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 2:30:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 3:00:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 3:30:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 4:00:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 4:30:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 5:00:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 5:30:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 6:00:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 6:30:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 7:00:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 7:30:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 8:00:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 8:30:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 9:00:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 9:30:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 10:00:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 10:30:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 11:00:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 11:30:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 12:00:33 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 12:30:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 1:00:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 1:30:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 2:00:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 2:30:35 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5166 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 69 MB. Current time: 2/16/22, 3:00:36 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,120 MB. GUI used memory: 68 MB. Current time: 2/16/22, 3:30:36 PM CST
+// Elapsed time: 51691 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2632 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 90 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+setFileChooser("F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/bit/ov5640x2_ddr3_tft.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/bit/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 13 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 515 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+// Elapsed time: 10 seconds
+setFileChooser("F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/bit/ov5640x2_ddr3_tft.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/bit/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 15 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 42 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+dismissDialog("Program Device"); // bC (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DVP_Capture.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ov5640x2_ddr3_tft.v", 0); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_OK", "OK"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Feb 16 15:46:33 2022] Launched impl_1... Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// Elapsed time: 27 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  4728 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// Elapsed time: 169 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "camera_init.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DVP_Capture.v", 2); // k (j, cp)
+selectCodeEditor("DVP_Capture.v", 353, 160); // cl (w, cp)
+selectCodeEditor("DVP_Capture.v", 348, 125); // cl (w, cp)
+selectCodeEditor("DVP_Capture.v", 383, 111); // cl (w, cp)
+selectCodeEditor("DVP_Capture.v", 247, 83); // cl (w, cp)
+selectCodeEditor("DVP_Capture.v", 336, 87); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("DVP_Capture.v", 384, 158); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ov5640x2_ddr3_tft.v", 1); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2121 ms.
+// Elapsed time: 27 seconds
+selectButton(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "project_summary"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1598ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1599 ms.
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 131 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1721 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8239 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 26813 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  51857 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  60547 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 45646 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  37831 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 31144 ms. Increasing delay to 8000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 453ms to process. Increasing delay to 2000 ms.
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,503 MB. GUI used memory: 71 MB. Current time: 2/16/22, 3:57:06 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2493 ms.
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,528 MB. GUI used memory: 72 MB. Current time: 2/16/22, 3:57:12 PM CST
+// [Engine Memory]: 2,528 MB (+315942kb) [15:31:14]
+// Xgd.load filename: F:/vivado/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 1.6s
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: F:/vivado/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 3.5s
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 904 ms to process. Increasing delay to 2000 ms.
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.8s
+// [Engine Memory]: 2,743 MB (+93734kb) [15:31:36]
+// [GUI Memory]: 145 MB (+6169kb) [15:31:40]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 156 MB (+3894kb) [15:31:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  20202 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 428 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a35tfgg484-2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2845.824 ; gain = 10.703 
+// Tcl Message: Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2845.824 ; gain = 10.703 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2845.906 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 131 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 2 instances   IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 109 instances   SRLC32E => SRL16E: 1 instances  
+// HMemoryUtils.trashcanNow. Engine heap size: 2,774 MB. GUI used memory: 100 MB. Current time: 2/16/22, 3:57:46 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1977 ms.
+// Elapsed time: 283 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:04:40 . Memory (MB): peak = 3411.539 ; gain = 1089.242 
+// ExpRunCommands.openImplResults elapsed time: 284s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 166 MB (+2238kb) [15:32:03]
+// [GUI Memory]: 175 MB (+978kb) [15:32:05]
+// [Engine Memory]: 2,902 MB (+22163kb) [15:32:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  8832 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,910 MB. GUI used memory: 127 MB. Current time: 2/16/22, 3:58:08 PM CST
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 195 MB (+11558kb) [15:32:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  7784 ms.
+// OpenDesignTask elapsed time: 313.8s
+// [GUI Memory]: 212 MB (+7576kb) [15:32:20]
+// 'dQ' command handler elapsed time: 317 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  3769 ms.
+// Elapsed time: 34 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,005 MB. GUI used memory: 149 MB. Current time: 2/16/22, 3:58:24 PM CST
+// Elapsed time: 25 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (24) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 17); // z (Q, cp)
+// Elapsed time: 274 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Feb 16 16:03:26 2022] Launched impl_1... Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Confirm Close"); // A (cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,005 MB. GUI used memory: 106 MB. Current time: 2/16/22, 4:03:47 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,005 MB. GUI used memory: 108 MB. Current time: 2/16/22, 4:03:50 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  8019 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Elapsed time: 21 seconds
+dismissDialog("Close"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1162 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 229ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1137ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 615ms to process. Increasing delay to 4000 ms.
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 117 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1810 ms.
+// Tcl Message: open_hw 
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  3639 ms.
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 4236.570 ; gain = 0.000 
+// 'Q' command handler elapsed time: 13 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1037 ms.
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Elapsed time: 78 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// WARNING: HEventQueue.dispatchEvent() is taking  39102 ms.

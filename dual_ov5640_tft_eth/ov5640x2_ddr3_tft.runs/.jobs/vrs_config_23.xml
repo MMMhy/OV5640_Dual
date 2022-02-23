@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="eth_tx_fifo_synth_1" LaunchDir="F:/Xilink_FPGA/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/eth_tx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

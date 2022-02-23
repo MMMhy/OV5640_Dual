@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 19 23:05:16 2022
+# Process ID: 19716
+# Current directory: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19704 F:\Xilink_FPGA\Project\ov5640x2_ddr3_tft_test\ov5640x2_ddr3_tft.xpr
+# Log file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/vivado.log
+# Journal file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 818.008 ; gain = 242.395
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 22 16:29:06 2022...

@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////////////////////
+// Company       : 武汉芯路恒科技有限公司
+//                 http://xiaomeige.taobao.com
+// Web           : http://www.corecourse.cn
+// 
+// Create Date   : 2019/05/01 00:00:00
+// Design Name   : 
+// Module Name   : 
+// Project Name  : 
+// Description   : camera_init模块例化模板
+// 
+// Dependencies  : 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+/////////////////////////////////////////////////////////////////////////////////
+
+camera_init
+#(
+  .IMAGE_TYPE  ( 0   ),// 0: RGB; 1: JPEG
+  .IMAGE_WIDTH ( 640 ),// 图片宽度
+  .IMAGE_HEIGHT( 480 ),// 图片高度(≤720)
+  .IMAGE_FLIP  ( 0   ),// 0: 不翻转，1: 上下翻转
+  .IMAGE_MIRROR( 0   ) // 0: 不镜像，1: 左右镜像
+)instance_name
+(
+  .Clk         (Clk          ),
+  .Rst_p       (Rst_p        ),
+  .Init_Done   (Init_Done    ),
+  .camera_rst_n(camera_rst_n ),
+  .camera_pwdn (camera_pwdn  ),
+  .i2c_sclk    (camera_sclk  ),
+  .i2c_sdat    (camera_sdat  )
+);

@@ -1,0 +1,34 @@
+/////////////////////////////////////////////////////////////////////////////////
+// Company       : 武汉芯路恒科技有限公司
+//                 http://xiaomeige.taobao.com
+// Web           : http://www.corecourse.cn
+// 
+// Create Date   : 2019/05/01 00:00:00
+// Design Name   : 
+// Module Name   : 
+// Project Name  : 
+// Description   : DVP_Capture 模块例化模板
+// 
+// Dependencies  : 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+/////////////////////////////////////////////////////////////////////////////////
+
+DVP_Capture instance_name(
+  .Rst_p      (Rst_p      ),//input
+  .PCLK       (PCLK       ),//input
+  .Vsync      (Vsync      ),//input
+  .Href       (Href       ),//input
+  .Data       (Data       ),//input     [7:0]
+
+  .ImageState (ImageState ),//output reg
+  .DataValid  (DataValid  ),//output
+  .DataPixel  (DataPixel  ),//output    [15:0]
+  .DataHs     (DataHs     ),//output
+  .DataVs     (DataVs     ),//output
+  .Xaddr      (Xaddr      ),//output    [11:0]
+  .Yaddr      (Yaddr      ) //output    [11:0]
+);

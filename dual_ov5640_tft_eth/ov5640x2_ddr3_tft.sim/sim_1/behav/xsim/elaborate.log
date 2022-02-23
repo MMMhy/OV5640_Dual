@@ -1,0 +1,14 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f0a53c8631f8447796b3a81f7f65c3d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DVP_Capture_tb_behav xil_defaultlib.DVP_Capture_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.srcs/sources_1/DVP_Capture/DVP_Capture.v" Line 18. Module DVP_Capture doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DVP_Capture
+Compiling module xil_defaultlib.DVP_Capture_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DVP_Capture_tb_behav

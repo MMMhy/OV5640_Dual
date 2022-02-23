@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 16 00:24:59 2022
+# Process ID: 7720
+# Current directory: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18016 F:\Xilink_FPGA\Project\ov5640x2_ddr3_tft_test\ov5640x2_ddr3_tft.xpr
+# Log file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/vivado.log
+# Journal file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:01:05 . Memory (MB): peak = 788.523 ; gain = 215.422
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210241029915.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241029915
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2318.418 ; gain = 929.820
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Feb 16 01:02:12 2022] Launched impl_1...
+Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241029915
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/bit/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/bit/ov5640x2_ddr3_tft.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Feb 16 15:46:33 2022] Launched impl_1...
+Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log
+close_hw
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 428 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2845.824 ; gain = 10.703
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2845.824 ; gain = 10.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2845.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 109 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:04:40 . Memory (MB): peak = 3411.539 ; gain = 1089.242
+open_report: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 3466.570 ; gain = 55.031
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Feb 16 16:03:26 2022] Launched impl_1...
+Run output will be captured here: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft_test/ov5640x2_ddr3_tft.runs/impl_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4236.570 ; gain = 0.000
+open_hw
+open_hw: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 4236.570 ; gain = 0.000
+connect_hw_server

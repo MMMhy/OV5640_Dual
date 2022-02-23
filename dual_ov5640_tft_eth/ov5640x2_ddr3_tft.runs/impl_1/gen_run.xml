@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1645632067">
+  <File Type="BITSTR-BMM" Name="ov5640x2_ddr3_tft_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ov5640x2_ddr3_tft_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="ov5640x2_ddr3_tft_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ov5640x2_ddr3_tft.tcl"/>
+  <File Type="OPT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ov5640x2_ddr3_tft_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ov5640x2_ddr3_tft_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ov5640x2_ddr3_tft_reports.tcl"/>
+  <File Type="OPT-DRC" Name="ov5640x2_ddr3_tft_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ov5640x2_ddr3_tft.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ov5640x2_ddr3_tft_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ov5640x2_ddr3_tft_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ov5640x2_ddr3_tft_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ov5640x2_ddr3_tft_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ov5640x2_ddr3_tft_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ov5640x2_ddr3_tft_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ov5640x2_ddr3_tft_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ov5640x2_ddr3_tft_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ov5640x2_ddr3_tft_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ov5640x2_ddr3_tft_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="ov5640x2_ddr3_tft.bgn"/>
+  <File Type="PLACE-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ov5640x2_ddr3_tft_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="ov5640x2_ddr3_tft.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ov5640x2_ddr3_tft_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ov5640x2_ddr3_tft_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="ov5640x2_ddr3_tft.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ov5640x2_ddr3_tft_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ov5640x2_ddr3_tft_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ov5640x2_ddr3_tft_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ov5640x2_ddr3_tft_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ov5640x2_ddr3_tft_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ov5640x2_ddr3_tft.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="ov5640x2_ddr3_tft_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="ov5640x2_ddr3_tft.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov5640x2_ddr3_tft_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ov5640x2_ddr3_tft_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="ov5640x2_ddr3_tft.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov5640x2_ddr3_tft_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ov5640x2_ddr3_tft_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ov5640x2_ddr3_tft_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ov5640x2_ddr3_tft_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ov5640x2_ddr3_tft_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ov5640x2_ddr3_tft_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ov5640x2_ddr3_tft_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ov5640x2_ddr3_tft_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ov5640x2_ddr3_tft_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ov5640x2_ddr3_tft_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ov5640x2_ddr3_tft_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ov5640x2_ddr3_tft_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov5640x2_ddr3_tft_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ov5640x2_ddr3_tft_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov5640x2_ddr3_tft_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov5640x2_ddr3_tft_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov5640x2_ddr3_tft_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ov5640x2_ddr3_tft_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ov5640x2_ddr3_tft_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="ov5640x2_ddr3_tft.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ov5640x2_ddr3_tft_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="ov5640x2_ddr3_tft.rbt"/>
+  <File Type="BITSTR-NKY" Name="ov5640x2_ddr3_tft.nky"/>
+  <File Type="BG-DRC" Name="ov5640x2_ddr3_tft.drc"/>
+  <File Type="RDI-RDI" Name="ov5640x2_ddr3_tft.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/DVP_Capture/DVP_Capture.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/camera_init/camera_init.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/crc32_d8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ddr3_ctrl_2port/ddr3_ctrl_2port.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/disp_driver/disp_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/eth_tx_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/eth_udp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ddr3_ctrl_2port/fifo2mig_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/camera_init/i2c_control/i2c_bit_shift.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/camera_init/i2c_control/i2c_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/image_stitche/image_stitche_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ip_checksum.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/camera_init/ov5640_init_table_rgb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/top/ov5640x2_ddr3_tft.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="mig_7series_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/crc32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ov5640x2_ddr3_tft"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/io.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="mig_7series_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rd_ddr3_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="wr_ddr3_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="image_buffer"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth_tx_fifo"/>
+</GenRun>

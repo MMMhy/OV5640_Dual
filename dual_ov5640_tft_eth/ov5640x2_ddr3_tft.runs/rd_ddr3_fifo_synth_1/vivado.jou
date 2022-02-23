@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 21 16:12:06 2022
+# Process ID: 14988
+# Current directory: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/ov5640x2_ddr3_tft.runs/rd_ddr3_fifo_synth_1
+# Command line: vivado.exe -log rd_ddr3_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rd_ddr3_fifo.tcl
+# Log file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/ov5640x2_ddr3_tft.runs/rd_ddr3_fifo_synth_1/rd_ddr3_fifo.vds
+# Journal file: F:/Xilink_FPGA/Project/ov5640x2_ddr3_tft/ov5640x2_ddr3_tft.runs/rd_ddr3_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rd_ddr3_fifo.tcl -notrace
